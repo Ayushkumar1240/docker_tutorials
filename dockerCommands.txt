@@ -1,0 +1,19 @@
+docker                 ==> deamon 
+docker -v              
+docker run -it ubuntu       ==> to run an image in interactive mode
+docker container ls         ==> to list the running containers
+docker container ls -a      ==> to list all the containers
+docker start containerName
+docker stop containerName
+docker exec containerName ls ==> execute container name and run ls
+docker exec containerName bash  ==> to go inside a container
+docker image ls            ==> shows images present in local machine
+docker run -it -p 1025:1025 ayush/nodeapp   ==> port configuration
+docekr run -it -p 1025:1025 -e key-value -e key-value ayush/nodeapp    ==> to pass extra variables like env variables
+docekr build -t yt-nodejs .       ==> to build your own custom image (code in Dockerfile)
+docker run -it -e PORT=4000 -p 4000:4000 ayush/nodeapp  ==> set the port to 4000 to run with localhost
+docker login             ==> to login to docker using cmd
+docker push imageName    ==> push your custom image to docker hub
+docker compose up        ==> to run multiple comntainers at same time (code in docker-compose.yml file)
+docker compose down      ==> to stop the container
+docker compose up -d     ==> detach mode (means run in background)
